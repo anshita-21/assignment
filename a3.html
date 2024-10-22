@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book.com - Your Online Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .book {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            float: right;
+            margin: 15px;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .book {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .book {
+                width: 100%;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book.com</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" id="home">
+        <h2>Featured Books</h2>
+        <div class="book-list">
+            <div class="book">
+                <h3>Collection of books</h3>
+                <p>Dive into the world of books</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Urval_av_de_bocker_som_har_vunnit_Nordiska_radets_litteraturpris_under_de_50_ar_som_priset_funnits_%282%29.jpg/260px-Urval_av_de_bocker_som_har_vunnit_Nordiska_radets_litteraturpris_under_de_50_ar_som_priset_funnits_%282%29.jpg" 
+                    alt="collection of books" />
+                <p>Reading is generally an individual activity, done silently, although on occasion a person reads out loud for other listeners; or reads aloud for one's own use, for better comprehension. Before the reintroduction of separated text (spaces between words) in the late Middle Ages, the ability to read silently was considered rather remarkable.[10][11]
+
+                    Major predictors of an individual's ability to read both alphabetic and non-alphabetic scripts are oral language skills,[12] phonological awareness, rapid automatized naming and verbal IQ.[13]
+                    
+                    As a leisure activity, children and adults read because it is enjoyable and interesting. In the US, about half of all adults read one or more books for pleasure each year.[14] About 5% read more than 50 books per year.[14] Americans read more if they: have more education, read fluently and easily, are female, live in cities, and have higher socioeconomic status.[14] Children become better readers when they know more about the world in general, and when they perceive reading as fun rather than as a chore to be performed.[14]
+                    Reading is generally an individual activity, done silently, although on occasion a person reads out loud for other listeners; or reads aloud for one's own use, for better comprehension. Before the reintroduction of separated text (spaces between words) in the late Middle Ages, the ability to read silently was considered rather remarkable.[10][11]
+
+Major predictors of an individual's ability to read both alphabetic and non-alphabetic scripts are oral language skills,[12] phonological awareness, rapid automatized naming and verbal IQ.[13]
+
+As a leisure activity, children and adults read because it is enjoyable and interesting. In the US, about half of all adults read one or more books for pleasure each year.[14] About 5% read more than 50 books per year.[14] Americans read more if they: have more education, read fluently and easily, are female, live in cities, and have higher socioeconomic status.[14] Children become better readers when they know more about the world in general, and when they perceive reading as fun rather than as a chore to be performed.[14]
+                </p>
+            </div>
+        </div>
+        <p>
+            As a conceptual object, a book refers to a written work of substantial length, which may be distributed either physically or digitally as an ebook. These works can be broadly classified into fiction (containing invented content, often narratives) and non-fiction (containing content intended as factual truth). A physical book may not contain such a work: for example, it may contain only drawings, engravings, photographs, puzzles, or removable content like paper dolls. It may also be left empty for personal use, as in the case of account books, appointment books, autograph books, notebooks, diaries and sketchbooks.
+        </p>
+    </div>
+
+    <footer>
+        <p>Book.com.</p>
+    </footer>
+</body>
+</html>
