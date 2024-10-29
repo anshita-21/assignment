@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="crousal.js" async></script>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #imageContainer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        img{
+            margin: 0 10px;
+            cursor: pointer;
+            width: 200px;
+            height: 200px;
+        }
+        #large {
+            width: auto;;
+            height: auto;
+            margin-top: 20px;
+            place-self: center;
+        }
+        #nav-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div id="imageContainer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSziXRWs7twsUU99j5mlR5_upJceEVovt9Krw&s" alt="Image 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4lOrrNz_CmoFcALjmGsHUSWOcCxtSoOL9A&s" alt="Image 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdx10ba-jpjidXRh6aSIBvBq7QNKT9r8z28w&s" alt="Image 3">
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSziXRWs7twsUU99j5mlR5_upJceEVovt9Krw&s" id="large" alt=" larger Image">
+    <div id="nav-button">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+</body>
+</html>
