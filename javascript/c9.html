@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c9</title>
+
+</head>
+<body>
+    <h1>Form</h1>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="number" id="age" placeholder="Enter your age">
+    <input type="text" id="color" placeholder="Enter your favorite color">
+    <button onclick="submit()">Submit</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        function submit() {
+            const name = document.getElementById("name").value;
+            const age = document.getElementById("age").value;
+            const favColor = document.getElementById("color").value;
+
+            if (name && age && favColor) {
+                const output = document.getElementById("output");
+                output.innerHTML = `
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Age:</strong> ${age}</p>
+                    <p><strong>Favorite Color:</strong> ${favColor}</p>
+                `;
+                document.getElementById("name").value = "";
+                document.getElementById("age").value = "";
+                document.getElementById("color").value = "";
+            } else {
+                alert("empty");
+            }
+        }
+    </script>
+</body>
+</html>

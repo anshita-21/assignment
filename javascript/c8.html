@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(){
+            var color = prompt("Enter a color");
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+    
+</head>
+<body>
+    <button onclick=changeColor()>click</button>
+    <p id="myElement">original text</p>
+    <button onclick=changeText()>text</button>
+    <script>
+        function changeText(){
+            document.getElementById("myElement").innerHTML = "New Text";
+        }
+    </script>
+</body>
+</html>

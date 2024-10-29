@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const f=["mango","apple","banana"];
+        f.forEach( i =>{
+            console.log(i);
+        })
+        f.push("guava");
+        f.pop();
+        f.shift();
+        f.unshift("grapes");
+        console.log(f);
+    </script>
+    <script>
+        const pers = {
+            name:"John",
+            age:30,
+            city:"New York"
+        };
+        console.log("name is:", pers.name);
+        console.log(`age is: ${pers.age}`);
+    </script>
+    <script>
+        const list = [
+            {name:"John", age:30, grade:"a"},
+            {name:"Jane", age:28, grade:"b"},
+            {name:"Tom", age:25, grade:"c"}
+        ];
+        list.forEach(i =>{
+            if(i.age<30)
+            console.log(`Name: ${i.name}, Age: ${i.age}, Grade: ${i.grade}`);
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=pass()>Go</button>;
+    <button onclick=iterate()>Iterate</button>
+    <button onclick=fac()>Fac</button>
+</body>
+<script>
+    const password = "anshita";
+    let input="";
+    let f=0;
+    function pass(){
+        while(input!=password){
+            input=prompt("enter password");
+        }
+        f=1;
+        alert("Access granted");
+    }
+    const array=[1, 2, 4, 7];
+    function iterate(){
+        for(let i=0;i<array.length;i++){
+            console.log(array[i]);
+        }
+    
+    }
+    function fac(){
+        let fact=1;
+        let n=parseInt(prompt("enter"))
+        for(let i=1;i<=n;i++){
+            fact*=i;
+        }
+        console.log(fact);
+    }
+
+</script>
+</html>
